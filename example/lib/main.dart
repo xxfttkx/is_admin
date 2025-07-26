@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text('is_admin Example')),
         body: Center(
-          child: Text(isAdmin
-              ? 'Currently has administrator/root privileges'
-              : 'Does not have administrator privileges'),
+          child: Text(
+            isAdmin ? 'Running as Admin/Root' : 'Not running as Admin',
+          ),
         ),
       ),
     );
