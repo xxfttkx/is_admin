@@ -8,7 +8,7 @@ A simple Flutter plugin to check if the current process is running with administ
 
 - Detects if the app is running with **administrator privileges** on Windows.
 - Detects if the app is running with **root privileges** on Linux/macOS.
-- Cross-platform support via platform-specific implementations.
+- Cross-platform support via FFI.
 - Lightweight and easy to integrate.
 
 ---
@@ -96,13 +96,6 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-
----
-
-## Development
-
-This plugin uses platform channels to communicate with native code on Windows, Linux, and macOS.
-Windows uses FFI to call Windows API; Linux/macOS check effective user ID.
 
 ---
 
